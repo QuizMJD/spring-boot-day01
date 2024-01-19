@@ -9,7 +9,7 @@ import java.util.UUID;
 
 public class Subject {
     @Id
-    @GeneratedValue
+    @GeneratedValue (strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
 // test

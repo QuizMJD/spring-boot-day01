@@ -7,7 +7,7 @@ import java.util.UUID;
 @Entity
 public class Teacher {
     @Id
-    @GeneratedValue
+    @GeneratedValue (strategy = GenerationType.IDENTITY)
     private Long id;
 
     @ManyToOne
