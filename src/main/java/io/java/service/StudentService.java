@@ -12,6 +12,6 @@ public interface StudentService {
     Optional<Student> save(final Student student);
     Optional<Page<Student>> findAll(final Pageable pageable);
     Optional<Page<Student>> findAllByName(final String name, final Pageable pageable);
-    Optional<List<Student>> findAll();
+    List<Student> findAll();
     Optional<Student> findById(final Long id);
 }

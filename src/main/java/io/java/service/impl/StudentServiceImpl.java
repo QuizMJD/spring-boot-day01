@@ -44,8 +44,8 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
-    public Optional<List<Student>> findAll() {
-        return Optional.of(this.studentRepository.findAll());
+    public List<Student> findAll() {
+        return this.studentRepository.findAll();
     }
 
     @Override
