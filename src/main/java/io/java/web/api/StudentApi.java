@@ -1,7 +1,7 @@
 package io.java.web.api;
 
 import io.java.model.Student;
-import io.java.service.impl.StudentService;
+import io.java.service.impl.StudentServiceImpl;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,9 +13,9 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/students")
 public class StudentApi {
-    private final StudentService studentService;
+    private final StudentServiceImpl studentService;
 
-    public StudentApi(StudentService studentService) {
+    public StudentApi(StudentServiceImpl studentService) {
         this.studentService = studentService;
     }
 

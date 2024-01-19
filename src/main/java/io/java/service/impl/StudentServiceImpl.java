@@ -2,6 +2,7 @@ package io.java.service.impl;
 
 import io.java.model.Student;
 import io.java.repository.StudentRepository;
+import io.java.service.StudentService;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -14,10 +15,10 @@ import java.util.Optional;
 
 @Service
 @Transactional
-public class StudentService implements io.java.service.StudentService {
+public class StudentServiceImpl implements StudentService {
     private final StudentRepository studentRepository;
 
-    public StudentService(StudentRepository studentRepository) {
+    public StudentServiceImpl(StudentRepository studentRepository) {
         this.studentRepository = studentRepository;
     }
 
