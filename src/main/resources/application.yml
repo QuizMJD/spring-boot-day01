@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: spring-boot-hello-world
+  banner:
+    location: classpath:banner/banner.txt
+  profiles:
+    default: dev-mysql
+    active: dev-mysql
+  jpa:
+      show-sql: true
+
+server:
+  port: 8080
+
+
